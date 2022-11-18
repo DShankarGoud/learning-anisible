@@ -1,14 +1,14 @@
-- name: variable
+- name: Variable
   hosts: all
   vars:
     URL: vars.example.com
   tasks:
-     - name: print URL
+     - name: Print URL
        ansible.builtin.debug:
           msg: URL = {{ URL }}
 
-     - name: print URL from tasks
+     - name: Print URL from tasks
         ansible.builtin.debug:
-        msg: URL = {{ URL }}
+          msg: URL = {{ URL }}
         vars:
           URL: tasks.example.com
