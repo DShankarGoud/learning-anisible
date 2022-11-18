@@ -22,9 +22,10 @@
       ansible.builtin.debug:
         msg: URL = {{URL}}
 
-- name: variable from Inv
+- name: Variable from Inv
   hosts: all
   tasks:
     - name: Print URL
-          ansible.builtin.debug:
-            msg: URL = {{URL}}
+      ansible.builtin.debug:
+        msg: URL = {{URL}}
+
