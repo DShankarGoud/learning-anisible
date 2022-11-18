@@ -9,3 +9,9 @@
      ansible.builtin.debug:
         msg: Task2 in Play1
 
+- name: Play2
+  hosts: all
+  task:
+   - name: Task1 in Play2
+     ansible.builtin.debug:
+         msg: Task1 in Play2
