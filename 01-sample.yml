@@ -11,7 +11,7 @@
 
 - name: Play2
   hosts: all
-  task:
+  tasks:
    - name: Task1 in Play2
      ansible.builtin.debug:
          msg: Task1 in Play2
