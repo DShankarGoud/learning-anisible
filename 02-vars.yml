@@ -32,6 +32,6 @@
 - name: Facts
   hosts: all
   tasks:
-    - name: ansible-distribution: TEST
+    - name: Print Fact
       ansible.builtin.debug:
       msg: OS Distribution = {{ ansible_distribution }}
