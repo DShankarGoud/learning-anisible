@@ -33,5 +33,5 @@
   hosts: all
   tasks:
     - name: Print Fact
-      ansible.builtin.debug:
-      msg: OS Distribution = {{ ansible_distribution }}
+        ansible.builtin.debug:
+          msg: OS Distribution = {{ ansible_distribution }}
