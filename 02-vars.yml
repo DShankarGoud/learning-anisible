@@ -29,7 +29,7 @@
       ansible.builtin.debug:
         msg: URL = {{URL}}
 
- name: Facts
+- name: Facts
   hosts: all
   tasks:
     - name: Print Fact
