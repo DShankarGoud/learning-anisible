@@ -50,4 +50,7 @@
       ansible.builtin.debug:
         msg: "{{OUT.stdout}}"
 
+    - name: set a variable
+      ansible.builtin.set_fact:
+        msg: "{{OUT.stout}}"
 
