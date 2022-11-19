@@ -29,3 +29,9 @@
       ansible.builtin.debug:
         msg: URL = {{URL}}
 
+- name: Facts
+  hosts: all
+  tasks:
+    - name: ansible-distribution: TEST
+      ansible.builtin.debug:
+      msg: OS Distribution = {{ ansible_distribution }}
