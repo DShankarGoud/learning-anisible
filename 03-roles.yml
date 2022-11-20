@@ -1,5 +1,0 @@
-- name: Roles
-  hosts: all
-  become: True
-  roles:
-     - sample
