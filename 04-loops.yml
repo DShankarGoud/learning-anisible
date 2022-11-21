@@ -10,7 +10,7 @@
    - name: Loop on Map
      debug:
        msg: "Fruit Name = {{item.name}}, Count = {{item.count}}"
-     loop:
-     - {name: "apple", count : 100}
-     - {name: "banana", count : 200}
+      loop:
+       - {name: "apple", count : 100}
+       - {name: "banana", count : 200}
 
