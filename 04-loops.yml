@@ -1,7 +1,7 @@
 - name: Loops
   hosts: localhost
   tasks:
-    - name: Print Fruit
+    - name: Print FRUIT
       debug:
         msg: "FRUIT = {{item}}"
       loop:
@@ -11,5 +11,5 @@
      debug:
        msg: "Fruit Name = {{item.name}}, Count = {{item.count}}"
      loop:
-     - {name : "apple", count : 100}
-     - {name : "banana", count : 200}
+     - {name: "apple", count : 100}
+     - {name: "banana", count : 200}
