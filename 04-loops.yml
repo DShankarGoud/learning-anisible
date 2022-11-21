@@ -1,0 +1,15 @@
+- name: Loops
+  host: localhost
+  tasks:
+    - name: Print Fruit
+      debug:
+        msg: "  FRUIT = {{item}}"
+      loop:
+        - apple
+        - banana
+   - name: Loop on Map
+     debug:
+       msg: "Fruit Name = {{item.name}}, Count = {{item.count}}"
+     loop:
+     - {name = "apple", count = 100 }
+     - {name = "banana", count = 200 }
