@@ -21,3 +21,5 @@
    - name: Print if x value is true
      debug:
        msg: Yes True
+     when: x
+
